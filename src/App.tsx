@@ -2,8 +2,9 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
 import Movies from "./components/pages/Movies";
 import MovieDetails from "./components/pages/MovieDetails";
-import Contact from "./components/pages/Contact";
+import Contact from "./components/pages/Contact/Contato";
 import Navbar from "./components/organisms/Navbar";
+import "./App.css";
 
 function App() {
   return (
