@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 body {
@@ -14,19 +13,20 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  background-color: #ffffff;
+  color: #000000;
 }
 
-card{
+html.dark body {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.card {
   background-color: #1e4fe4;
 }
 
-h1 {
-  text-align: center;
-  margin: 4rem 0;
-  font-size: 2.5rem;
-}
-
-h2 {
+h1, h2 {
   text-align: center;
   margin: 4rem 0;
   font-size: 2.5rem;
@@ -42,18 +42,43 @@ html.dark {
   color: #ffffff;
 }
 
+input,
+textarea,
+select {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+html.dark input,
+html.dark textarea,
+html.dark select {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border: 1px solid #555;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #e5e6e9;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 9999;
+  background-color: #fff;
+  color: #000;
+}
+
+html.dark nav {
+  background-color: #1e1e1e;
+  color: #fff;
 }
 
 nav a {
@@ -82,9 +107,9 @@ nav button:hover {
   color: #646cff;
 }
 
-a{
+a {
   font-weight: 500;
-  color: #646cff;
+  color: inherit;
   text-decoration: inherit;
 }
 
@@ -93,31 +118,27 @@ a:hover {
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-  
-    color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
-  
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-  }
-  
-  a {
-    color: #646cff;
-  }
-  
-  a:hover {
-    color: #747bff;
-  }
-  button {
+  html:not(.dark) body {
     background-color: #f9f9f9;
+    color: #333;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem;
+  }
+
+  nav a,
+  nav button {
+    font-size: 0.80rem;
+    margin: 0.5rem 0;
   }
 }

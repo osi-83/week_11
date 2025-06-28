@@ -26,11 +26,8 @@ function Contact() {
 
     return (
         <div>
-            <h2>Fale conosco</h2>
-
             <ul style={{ listStyleType: 'none', textAlign: 'center',
-            marginBottom: '1rem',
-            
+            margin: '1rem 0',            
             }}>
                 <li>Telefone: (11) 1234-5678</li>
             </ul>

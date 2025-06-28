@@ -3,6 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import HorizonteEstelar from '../../../assets/Horizonte_estelar.jpg';
 import CartasDeInverno from '../../../assets/Cartas_inverno.jpg';
 import Aventuras from '../../../assets/Aventuras.jpg';
+import CidadeSubmersa from '../../../assets/Cidade_Submersa.jpg';
+import CodigoPerdido from '../../../assets/Codigo_Perdido.jpg';
+import UltimaCancao from '../../../assets/A_ultima_cancao.jpg';
 
 
 const movies = [
@@ -30,6 +33,30 @@ const movies = [
     ageRating: '12+',
     synopsis: '....',
   },
+  {
+    id: '4',
+    title: 'Cidade Submersa',
+    posterUrl: CidadeSubmersa,
+    genre: 'Suspense',
+    ageRating: '16+',
+    synopsis: '....',
+  },
+  {
+    id: '5',
+    title: 'O código perdido',
+    posterUrl: CodigoPerdido,
+    genre: 'Mistério',
+    ageRating: '16+',
+    synopsis: '....',
+  },
+  {
+    id: '6',
+    title: 'A última canção',
+    posterUrl: UltimaCancao,
+    genre: 'Drama',
+    ageRating: '10+',
+    synopsis: '....',
+  },
 ];
 
 export default function MoviesPage() {
@@ -37,8 +64,6 @@ export default function MoviesPage() {
 
   return (
     <div>
-      <h1>Lista de Filmes</h1>
-      <div>
         {movies.map((movie) => (
           <MovieCard
             key={movie.id}
@@ -50,6 +75,5 @@ export default function MoviesPage() {
           />
         ))}
       </div>
-    </div>
   );
 }

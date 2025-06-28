@@ -1,5 +1,5 @@
-function Home() {
-  return <h1 >Bem-vindo ao TicketOnline!</h1>;
-}
+import TemplateInicioPage from "../../templates/TemplateInicioPage";
 
-export default Home;
+export default function InicioPage() {
+  return <TemplateInicioPage />;
+}

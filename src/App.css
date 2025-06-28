@@ -1,4 +1,4 @@
-/*#root {
+#root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -17,7 +17,7 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-/*button{
+button{
   background-color: black;
   color: white;
   margin: 1rem;
@@ -53,4 +53,3 @@ button:hover{
 .read-the-docs {
   color: #888;
 }
-*/
