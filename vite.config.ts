@@ -5,4 +5,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/week_11/',
-})
+  resolve: {
+    alias: {
+      "@": "/src", // Opcional: atalho para importar mais fácil
+    },
+  },
+});

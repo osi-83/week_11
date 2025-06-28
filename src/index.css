@@ -1,7 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body {
@@ -9,6 +14,10 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+}
+
+card{
+  background-color: #1e4fe4;
 }
 
 h1 {
@@ -38,7 +47,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: inherit;
+  background-color: #e5e6e9;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -78,18 +87,33 @@ a{
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
 
-
-
-
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
   }
+  
+  a {
+    color: #646cff;
+  }
+  
   a:hover {
     color: #747bff;
   }

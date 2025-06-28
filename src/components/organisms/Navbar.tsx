@@ -10,7 +10,7 @@ const Navbar = () => {
     `px-4 py-2 ${location.pathname === path ? "font-bold underline" : ""}`;
 
   return (
-    <nav className="flex justify-between items-center p-4 shadow-md bg-white dark:bg-gray-800 text-black dark:text-white">
+    <nav>
       <div className="text-xl font-bold">🎟️ TicketOnline</div>
       <div className="flex gap-4 items-center">
         <Link to="/" className={navItemClass("/")}>Início</Link>
