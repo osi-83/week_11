@@ -10,8 +10,8 @@ interface MovieCardsProps {
 
 export const MovieCard: React.FC<MovieCardsProps> = ({ title, posterUrl, genre, ageRating, onSeeMore }) => {
   return (
-    <div className="display flex flex-col items-center">
-      <img src={posterUrl} alt={title} loading="lazy" className="h-250 w-80"/>
+    <div className="display flex flex-col items-center p-6">
+      <img src={posterUrl} alt={title} loading="lazy" className="h-250 w-180"/>
       <h3 className="text-lg font-bold mt-4 ">{title}</h3>
       <p className="text-sm mt-2 text-gray-600 mb-2">Gênero: {genre}</p>
       <p className="text-sm mt-2 text-gray-600">Classificação: {ageRating}</p>

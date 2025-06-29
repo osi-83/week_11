@@ -61,7 +61,7 @@ export default function MovieDetailsPage() {
 
   return (
     <div className="grid gap-2 text-center">
-      <img src={movie.posterUrl} alt={movie.title} style={{ maxWidth: '400px' , maxHeight: '400px', margin: '10px auto', display: 'block' }} />
+      <img src={movie.posterUrl} alt={movie.title} style={{ maxWidth: '400px' , maxHeight: '400px', margin: '10px auto' }} />
       <h1 className=" font-bold text-2x1, mb-1 ">{movie.title}</h1>
       <p className="text-gray-600, mb-1 ">Gênero: {movie.genre}</p>
       <p className="text-gray-600">Classificação: {movie.ageRating}</p>
